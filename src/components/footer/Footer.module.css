@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.footer-column {
+.footerColumn {
     max-width: 350px;
     flex-grow: 1;
     display: flex;
@@ -14,18 +14,18 @@
 
 }
 
-.footer-copyright {
+.footerCopyright {
     /* color: #b8ceeb; */
     line-height: 1.3;
 }
 
-.footer-copyright-name {
+.footerCopyrightName {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 28px;
 }
 
-.footer-copyright p {
+.footerCopyright p {
     margin: 0;
     margin-bottom: 15px;
     font-weight: 600;
@@ -36,7 +36,7 @@
 
 } */
 
-.footer-icons p {
+.footerIcons p {
     margin: 0;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -45,25 +45,28 @@
     font-size: 16px;
 }
 
-.footer-icons-row {
+.footerIconsRow {
     display: flex;
     align-items: center;
 
 }
 
-.footer-icons-row > * {
+.footerIconsRow > * {
     margin-left: 30px;
 
 }
+.footerIconsRow img{
+    width: 30px;
+    height: 30px;}
 
-.footer-icons-row img:hover{
+.footerIconsRow img:hover{
     transition: all 0.3s ease-in;
     transform: scale(1.5);
     filter: drop-shadow(0px 0px 30px rgb(251, 255, 2));
 }
 
 
-.footer-button {
+.footerButton {
     display: inline-block;
     height: 50px;
     padding-left: 30px;
@@ -83,17 +86,17 @@
     transition: all 0.3s ease-in;
 }
 
-.footer-button:hover {
+.footerButton:hover {
     background-color: white;
     color: #bda6d4;
     transform: scale(1.05);
 }
 
-.footer-contacts {
+.footerContacts {
     padding-top: 20px;
 }
 
-.footer-contacts p {
+.footerContacts p {
     font-size: 16px;
     line-height: 1.3;
     text-align: center;
