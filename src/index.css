@@ -1,3 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color:#b781ec;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -5,4 +18,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+img {
+  max-width: 100%;
 }
