@@ -16,7 +16,7 @@
     color: #bda6d4;
 }
 
-.goodsCardWrapper {
+.cardsRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

@@ -1,35 +1,44 @@
 import React, { useState } from 'react';
 import s from './Content.module.css'
 import Card from '../card/Card'
-// import Female from '../../resources/img/main/category_female.jpg'
-// import Male from '../../resources/img/main/category_male.jpg'
-// import Childrens from '../../resources/img/main/category_childrens.jpg'
+import Female from '../../resources/img/main/category_female.jpg'
+import Male from '../../resources/img/main/category_male.jpg'
+import Childrens from '../../resources/img/main/category_childrens.jpg'
 // import Plaid from '../../resources/img/main/category_plaid.jpg'
 
 
 const Content = () => {
 
-    const [cards, setCards] = useState([
-        {male: {link: "/male", cardName: "Чоловіче", image: "../../resources/img/main/category_male.jpg" }},
-        {female: {link: "/female", cardName: "Жіноче", image: "../../resources/img/main/category_female.jpg" }},
-        {childrens: {link: "/female", cardName: "Дитяче", image: "../../resources/img/main/category_childrens.jpg" }},
-        {plaid: {link: "/plaid", cardName: "Пледи", image: "../../resources/img/main/category_plaid.jpg" }}
-    ]);
+    // const [cards, setCards] = useState([
+    //     {male: {link: "/male", cardName: "Чоловіче", image: "../../resources/img/main/category_male.jpg" }},
+    //     {female: {link: "/female", cardName: "Жіноче", image: "../../resources/img/main/category_female.jpg" }},
+    //     {childrens: {link: "/childrens", cardName: "Дитяче", image: "../../resources/img/main/category_childrens.jpg" }},
+    //     {plaid: {link: "/plaid", cardName: "Пледи", image: "../../resources/img/main/category_plaid.jpg" }}
+    // ]);
+
+    const cards = [
+        {genre: "male", link: "/male", cardName: "Чоловіче", img: Male},
+        {genre: "female", link: "/female", cardName: "Жіноче", img: Female},
+        {genre: "childrens", link: "/childrens", cardName: "Дитяче", img: Childrens}
+    ]
 
 
-    function renderCards() {
-        cards.forEach((item)=>{
-            return(
-                <Card />
-            );
-        })
-    }
+    // function renderCards() {
+    //     cards.forEach((item)=>{
+    //         return(
+    //             <Card />
+    //         );
+    //     })
+    // }
+    
+    let renderCards = cards.map((el, index) => <Card key={index} cardName={el.cardName} img={el.img}/>)
+
 
     return (
-        <div сlassName={s.goods}>
+        <div className={s.goods}>
            <h2 className={s.goodsHeader}>Ассортимент</h2>
-            <div>
-                {renderCards()}
+            <div className={s.cardsRow}>
+                {renderCards}
             </div>
         </div>
         // <section className={s.goods} id="goods">
