@@ -22,58 +22,9 @@
     justify-content: space-evenly;
 }
 
-.card {
-    margin-bottom: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
-    max-width: 260px;
-    background-color: white;
-    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
-    flex-grow: 1;
-    transition: transform 0.2s ease-in;
-    border-radius: 15px;
-}
 
-.card:hover {
-    transform: translateY(-15px);
-    box-shadow:0px 0px 20px 0px #ab7adb ;
-}
 
-.cardLink {
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-    color: #bda6d4;
-    transition: color 0.2s ease-in;
-}
 
-.cardLink:hover {
-    color: #ab7adb;
-}
-
-.cardImg {
-    margin-bottom: 10px;
-    border-radius: 15px;
-}
-
-.cardTitle {
-    margin: 0;
-    margin-bottom: 13px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 130%;
-    text-align: center
-}
-
-.card p {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 130%;
-    height: 60px;
-    overflow: hidden;
-
-}
 
 .modal{
     position:fixed;

@@ -31,7 +31,7 @@ const Content = () => {
     //     })
     // }
     
-    let renderCards = cards.map((el, index) => <Card key={index} cardName={el.cardName} img={el.img}/>)
+    let renderCards = cards.map((el, ind) => <Card key={ind} cardName={el.cardName} img={el.img} link={el.link}/>)
 
 
     return (
